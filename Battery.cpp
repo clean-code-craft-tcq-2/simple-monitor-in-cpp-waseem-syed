@@ -48,7 +48,7 @@ bool Battery::checkChargeRateRange(float rate)
    bool isChargeRateInRange = true;
    if(false == (rate <= CHARGE_RATE))
    {
-      isChargeRateInRange false;
+      isChargeRateInRange = false;
       string chargeRate("CHARGE RATE");
       printWarning(chargeRate); 
    }
