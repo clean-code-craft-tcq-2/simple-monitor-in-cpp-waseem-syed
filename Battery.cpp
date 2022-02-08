@@ -1,4 +1,4 @@
-#include "BatteryCheck.h"
+#include "Battery.h"
 #include <iostream>
 #include <string>
 
