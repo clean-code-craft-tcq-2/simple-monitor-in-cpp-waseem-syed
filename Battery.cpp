@@ -41,7 +41,7 @@ bool Battery::checkChargeRateRange(float rate)
    bool isChargeRateInRange = true;
    if(false == (rate <= CHARGE_RATE))
    {
-      isChargeRateInRange false;
+      isChargeRateInRange = false;
       cout << "Charge Rate out of range!\n";
    }
    return isChargeRateInRange;
