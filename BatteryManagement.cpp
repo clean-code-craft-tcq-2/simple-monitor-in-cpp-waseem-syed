@@ -6,9 +6,9 @@ int main() {
    TestBattery test;
                  /*| temperature |,| soc |,| chargeRate |,| expected O/P|*/
    test.testBattery(       58     ,   60  ,     0.8      ,     false    );
-  /* test.testBattery(       40     ,   80  ,     0.7      ,     true     );
+   test.testBattery(       40     ,   80  ,     0.7      ,     true     );
    test.testBattery(       40     ,   60  ,     0.8      ,     false    );
-   test.testBattery(       40     ,   60  ,     0.7      ,     true     );
+   /*test.testBattery(       40     ,   60  ,     0.7      ,     true     );
    test.testBattery(       45     ,   20  ,     0.8      ,     true     );
    test.testBattery(       45     ,   80  ,     0.8      ,     true     );
    test.testBattery(       0      ,   20  ,     0.7      ,     false    );
