@@ -17,7 +17,7 @@ bool Battery::isBatteryOK(float temperature, float soc, float chargeRate)
 bool Battery::checkTemperatureRange(float temperatue)
 {
    bool isTemperatureInRange = true;
-   if(false == (temperatue > MIN_TEMPERATURE && temperatue <= MAX_TEMPERATURE))
+   if(temperatue < MIN_TEMPERATURE || temperatue > MAX_TEMPERATURE))
    {
       isTemperatureInRange = false;
       cout << "Temperature out of range!\n";
@@ -28,7 +28,7 @@ bool Battery::checkTemperatureRange(float temperatue)
 bool Battery::checkStateOfCharegeRange(float soc)
 {
    bool isSOCInRange = true;  
-   if(false == (soc >= MIN_SOC && soc <= MAX_SOC))
+   if(soc < MIN_SOC || soc > MAX_SOC))
    {
       isSOCInRange = false;
       cout << "SOC out of range!\n";
@@ -39,7 +39,7 @@ bool Battery::checkStateOfCharegeRange(float soc)
 bool Battery::checkChargeRateRange(float rate)
 {
    bool isChargeRateInRange = true;
-   if(false == (rate <= CHARGE_RATE))
+   if(rate > CHARGE_RATE))
    {
       isChargeRateInRange = false;
       cout << "Charge Rate out of range!\n";
