@@ -18,5 +18,4 @@ class Battery
     bool checkTemperatureRange(float temperatue);
     bool checkStateOfCharegeRange( float soc);
     bool checkChargeRateRange(float rate);
-    void printWarning(string output);
 };
