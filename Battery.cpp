@@ -6,12 +6,7 @@ using namespace std;
 
 bool Battery::isBatteryOK(float temperature, float soc, float chargeRate)
 {
-   bool isBatteryOk = false;
-   if(checkTemperatureRange(temperature) && checkStateOfCharegeRange(soc) && checkChargeRateRange(chargeRate))
-   {
-      isBatteryOk = true;
-   }
-    return isBatteryOk;
+   return (checkTemperatureRange(temperature) && checkStateOfCharegeRange(soc) && checkChargeRateRange(chargeRate));
 }
 
 bool Battery::checkTemperatureRange(float temperatue)
